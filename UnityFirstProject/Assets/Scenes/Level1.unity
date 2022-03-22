@@ -283,7 +283,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1192
+  m_Name: pb_Mesh-1196
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -976,14 +976,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8757349, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
-      propertyPath: m_Drag
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8757349, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
-      propertyPath: m_Mass
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2258129680416702026, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -992,10 +984,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1335814896}
-    - target: {fileID: 7354072406431741565, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
-      propertyPath: _force
-      value: 75
-      objectReference: {fileID: 0}
     - target: {fileID: 7606421212815739523, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
       propertyPath: m_RootOrder
       value: 0
