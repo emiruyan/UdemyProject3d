@@ -976,6 +976,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8757349, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2258129680416702026, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -984,9 +988,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1335814896}
+    - target: {fileID: 7354072406431741565, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
+      propertyPath: _turnSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7606421212815739523, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606421212815739523, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606421212815739523, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606421212815739523, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7606421212815739523, guid: f2d51c28c72cea8459b85e61d67843f9, type: 3}
       propertyPath: m_LocalPosition.x
