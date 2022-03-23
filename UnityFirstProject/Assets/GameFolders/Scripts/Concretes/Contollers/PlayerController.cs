@@ -48,6 +48,7 @@ namespace  UdemyProject1t.Controllers
        private void OnEnable()
        {
            GameManager.Instance.OnGameOver += HandleOnEventTrigger;
+           GameManager.Instance.OnMissionSucced += HandleOnEventTrigger;
        }
 
        
@@ -55,10 +56,11 @@ namespace  UdemyProject1t.Controllers
        private void OnDisable()
        {
            GameManager.Instance.OnGameOver -= HandleOnEventTrigger;
+           GameManager.Instance.OnMissionSucced -= HandleOnEventTrigger;
        }
 
        private void Update() //inputları buradan alacağız. 
-        {
+        { 
             if (!_canMove) return;
             
                 
