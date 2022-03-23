@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UdemyProject1.Inputs;
+using UdemyProject1.Managers;
 using UdemyProject1.Movements;
 using UnityEngine;
 
@@ -21,9 +22,9 @@ namespace  UdemyProject1t.Controllers
         Rotator _rotator; 
         Fuel _fuel;
         
-
-       bool _canForceUp; 
-       float _leftRight;
+        bool _canMove; 
+        bool _canForceUp; 
+        float _leftRight;
        public float TurnSpeed => _turnSpeed;
 
        public float Force => _force;
@@ -39,9 +40,30 @@ namespace  UdemyProject1t.Controllers
 
         }
 
+       private void Start()
+       {
+           _canMove = true;
+       }
 
-        private void Update() //inputları buradan alacağız. 
+       private void OnEnable()
+       {
+           GameManager.Instance.OnGameOver += HandleOnEventTrigger;
+       }
+
+       
+
+       private void OnDisable()
+       {
+           GameManager.Instance.OnGameOver -= HandleOnEventTrigger;
+       }
+
+       private void Update() //inputları buradan alacağız. 
         {
+            if (!_canMove) return;
+            
+                
+            
+            
             if (_input.IsForceUp && !_fuel.IsEmpty) // eğer ki hem yukarı basıp hem fuelim boş olsa burası true olsun
             {
                 _canForceUp = true; 
@@ -66,6 +88,13 @@ namespace  UdemyProject1t.Controllers
             
             _rotator.FixedTick(_leftRight);
             
+        }
+        private void HandleOnEventTrigger()
+        {
+            _canMove = false;
+            _canForceUp = false;
+            _leftRight = 0f;
+            _fuel.FuelIncrease(0f);
         }
     }
 
