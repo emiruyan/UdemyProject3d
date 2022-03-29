@@ -13,7 +13,7 @@ namespace UdemyProject1t.Controllers
         {
             PlayerController player = other.collider.GetComponent<PlayerController>(); // İki nesne çarpıştırdık. Bu iki nesneden birinde player controller var mı demiş olduk
 
-            if (player !=null)
+            if (player !=null && player.CanMove)
             {
                GameManager.Instance.GameOver();
             }

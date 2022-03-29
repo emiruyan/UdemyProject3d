@@ -28,7 +28,8 @@ namespace  UdemyProject1t.Controllers
        public float TurnSpeed => _turnSpeed;
 
        public float Force => _force;
-       
+       public bool CanMove => _canMove;
+
 
        private void Awake()
         {
@@ -91,7 +92,7 @@ namespace  UdemyProject1t.Controllers
             _rotator.FixedTick(_leftRight);
             
         }
-        private void HandleOnEventTrigger()
+        private void HandleOnEventTrigger() //kazandığımızda veya kaybettiğimizde bu bölüm çalışıyor
         {
             _canMove = false;
             _canForceUp = false;
