@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UdemyProject1.Managers;
+using UdemyProject1t.Controllers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace UdemyProject1t.Controllers
+namespace UdemyProject1t.Abstract.Controllers
 {
-    public class WallController : MonoBehaviour
+    public abstract class WallController : MonoBehaviour
     {
         private void OnCollisionEnter(Collision other) //iki nesne çarpışmasında oncollisionenter devreye girer.
         {
