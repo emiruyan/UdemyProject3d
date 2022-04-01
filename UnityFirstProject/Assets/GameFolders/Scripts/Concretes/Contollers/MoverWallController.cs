@@ -11,12 +11,13 @@ namespace UdemyProject1.Controllers
 
         [SerializeField] Vector3 _direction;  //nesnemiz yukarı yönde ilerleyip orijinal yerine geri dönecek
        // [Range(0f,1f)] //range komutu ile sınır koyuyoruz. Float faktörümüz 0 ve 1 arasında gidiek demek oluıyor.  
-        [SerializeField] float _factor;
-        [SerializeField] float _speed = 1f; 
+        // [SerializeField] float _factor;
+        [SerializeField] float _speed = 1f;
+        [SerializeField] float _directionFactor = 1f;
 
         Vector3 _startPosition; //orijinal transgform tanımladık
         const float FULL_CIRCLE = Mathf.PI * 2F;                              //Const komutu değiştirelemeyen anlamına gelir.Ona bir değer atıyoruz ve değiştirelmiyor.
-
+        float _factor;
         private void Awake()
         {
             _startPosition = transform.position;
@@ -27,9 +28,10 @@ namespace UdemyProject1.Controllers
             float cycle = Time.time / _speed;
             float sinWave = Mathf.Sin(cycle * FULL_CIRCLE);
 
-            _factor = Mathf.Abs((sinWave));
+            // _factor = Mathf.Abs((sinWave));
+            _factor = sinWave / 2f + 0.5f;
 
- 
+
             Vector3 offset = _direction * _factor;
             transform.position = offset + _startPosition;
 
