@@ -11,8 +11,9 @@ namespace UdemyProject1.Movements
         [SerializeField] float _currentFuel; // o an ki yakıtımız
         [SerializeField] ParticleSystem _particle;
 
-        public bool IsEmpty => _currentFuel < 1f; //yakıt kalmamışsa gibi düşünebiliriz.         
-
+        public bool IsEmpty => _currentFuel < 1f; //yakıt kalmamışsa gibi düşünebiliriz.       
+        public float CurrentFuel => _currentFuel / _maxFuel;
+        
         private void Awake()
         {
             _currentFuel = _maxFuel;
