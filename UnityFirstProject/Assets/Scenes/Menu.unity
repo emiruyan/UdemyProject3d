@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: a07fadb24ea940240afba3afc1a692cc, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b9be0c15efe8ad9489fdeead114d8ec5, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.051441513, g: 0.1500552, b: 0.19368404, a: 1}
+  m_IndirectSpecularColor: {r: 0.0017672422, g: 0.0017834865, b: 0.0017635503, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -187,6 +187,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 969165014, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 969165014, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.15294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 969165014, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.11764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527775376, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: b9be0c15efe8ad9489fdeead114d8ec5, type: 2}
+    - target: {fileID: 2011412802, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011412802, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.15194033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011412802, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.113741525
+      objectReference: {fileID: 0}
     - target: {fileID: 4933082440179278721, guid: c103f6fb0d0c91c42b0a065bfc5ac79e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
